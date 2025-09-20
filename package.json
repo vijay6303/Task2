@@ -1,0 +1,27 @@
+{
+  "name": "task2-bootstrap-templating",
+  "version": "1.0.0",
+  "description": "Bootstrap 5 website using Nunjucks templating and Vite bundler",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run build && cd dist && npx vite",
+    "build": "node build.js",
+    "preview": "npm run build && cd dist && npx vite preview"
+  },
+  "keywords": [
+    "bootstrap",
+    "nunjucks",
+    "vite",
+    "templating",
+    "responsive"
+  ],
+  "author": "Task 2 Intern",
+  "license": "MIT",
+  "devDependencies": {
+    "nunjucks": "^3.2.4",
+    "vite": "^4.5.14"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}
