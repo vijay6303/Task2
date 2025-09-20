@@ -35,4 +35,13 @@ templates.forEach(template => {
   }
 });
 
+// Copy _redirects file for Netlify
+try {
+  const redirectsContent = '/*    /index.html   200';
+  fs.writeFileSync('dist/_redirects', redirectsContent);
+  console.log('✓ Created dist/_redirects');
+} catch (error) {
+  console.error('✗ Error creating _redirects:', error.message);
+}
+
 console.log('Build completed!');
